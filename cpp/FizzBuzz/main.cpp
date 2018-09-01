@@ -4,6 +4,9 @@
 using namespace std;
 
 int main() {
-    cout << FizzBuzz(0) << endl;
+    for (int i = 1; i < 100; i++) {
+        cout << FizzBuzz(i) << " ";
+    }
+    cout << endl;
     return 0;
 }
