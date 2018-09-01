@@ -3,6 +3,6 @@
 using namespace std;
 
 string FizzBuzz(int number) {
-    return "1";
+    return to_string(number);
 }
 
