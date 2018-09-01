@@ -2,16 +2,20 @@
 
 using namespace std;
 
+bool isMultipleOf(int multiple, int number) {
+    return number % multiple == 0;
+}
+
 string FizzBuzz(int number) {
-    if (number % 3 == 0 && number % 5 == 0) {
+    if (isMultipleOf(15, number)) {
         return "FizzBuzz";
     }
 
-    if (number % 3 == 0) {
+    if (isMultipleOf(3, number)) {
         return "Fizz";
     }
 
-    if (number % 5 == 0) {
+    if (isMultipleOf(5, number)) {
         return "Buzz";
     }
 
