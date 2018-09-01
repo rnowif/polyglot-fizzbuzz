@@ -16,3 +16,7 @@ TEST(FizzBuzz, should_return_fizz_when_3) {
 TEST(FizzBuzz, should_return_fizz_when_multiple_of_3) {
     EXPECT_EQ("Fizz", FizzBuzz(6));
 }
+
+TEST(FizzBuzz, should_return_buzz_when_multiple_of_5) {
+    EXPECT_EQ("Buzz", FizzBuzz(5));
+}
