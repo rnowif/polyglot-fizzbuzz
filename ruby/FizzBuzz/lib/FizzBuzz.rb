@@ -5,7 +5,7 @@ module FizzBuzz
   class FizzBuzz
 
     def display(number)
-      return ""
+      return number.to_s
     end
   end
 

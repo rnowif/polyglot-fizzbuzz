@@ -6,7 +6,7 @@ RSpec.describe FizzBuzz do
     expect(FizzBuzz::VERSION).not_to be nil
   end
 
-  it "displays empty string when number is 0" do
-    expect(fizzBuzz.display(0)).to eq("")
+  it "displays the number" do
+    expect(fizzBuzz.display(2)).to eq("2")
   end
 end
