@@ -18,7 +18,7 @@ module FizzBuzz
         return "Buzz"
       end
 
-      return number.to_s
+      number.to_s
     end
   end
 
