@@ -1,5 +1,12 @@
 require "FizzBuzz/version"
 
 module FizzBuzz
-  # Your code goes here...
+
+  class FizzBuzz
+
+    def display(number)
+      return ""
+    end
+  end
+
 end
