@@ -23,3 +23,9 @@ module FizzBuzz
   end
 
 end
+
+fizz_buzz = FizzBuzz::FizzBuzz.new
+
+(1...100).each do |i|
+  puts fizz_buzz.display(i)
+end
