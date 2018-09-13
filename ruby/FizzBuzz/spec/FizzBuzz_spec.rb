@@ -1,9 +1,9 @@
-RSpec.describe FizzBuzz do
+RSpec.describe Kata do
 
-  _fizz_buzz = FizzBuzz::FizzBuzz.new
+  _fizz_buzz = Kata::FizzBuzz.new
 
   it "has a version number" do
-    expect(FizzBuzz::VERSION).not_to be nil
+    expect(Kata::VERSION).not_to be nil
   end
 
   it "displays the number" do

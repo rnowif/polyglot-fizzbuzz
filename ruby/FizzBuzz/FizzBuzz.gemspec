@@ -5,7 +5,7 @@ require "FizzBuzz/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "FizzBuzz"
-  spec.version       = FizzBuzz::VERSION
+  spec.version       = Kata::VERSION
   spec.authors       = ["Renaud Humbert-Labeaumaz"]
   spec.email         = ["rnow.if@gmail.com"]
 

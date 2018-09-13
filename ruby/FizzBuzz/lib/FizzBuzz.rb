@@ -1,21 +1,21 @@
 require "FizzBuzz/version"
 
-module FizzBuzz
+module Kata
+
+  RULES = [
+      [15, "FizzBuzz"],
+      [3, "Fizz"],
+      [5, "Buzz"]
+  ]
 
   class FizzBuzz
 
     def display(number)
 
-      if number % 15 == 0
-        return "FizzBuzz"
-      end
-
-      if number % 3 == 0
-        return "Fizz"
-      end
-
-      if number % 5 == 0
-        return "Buzz"
+      Kata::RULES.each do |(divisor, value)|
+        if number % divisor == 0
+          return value
+        end
       end
 
       number.to_s
@@ -24,7 +24,7 @@ module FizzBuzz
 
 end
 
-fizz_buzz = FizzBuzz::FizzBuzz.new
+fizz_buzz = Kata::FizzBuzz.new
 
 (1...100).each do |i|
   puts fizz_buzz.display(i)
